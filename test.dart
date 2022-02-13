@@ -23,39 +23,7 @@ class _testState extends State<test> {
           ],
         ),
         appBar: AppBar(),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              UserAccountsDrawerHeader(
-                accountName: Text("ahmad"),
-                accountEmail: Text("ahmad@gmail.com"),
-                currentAccountPicture: CircleAvatar(
-                  backgroundColor: Colors.red,
-                ),
-              ),
-              ListTile(
-                title: Text("Home"),
-                leading: Icon(Icons.home),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Settings"),
-                leading: Icon(Icons.settings),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("contact us"),
-                leading: Icon(Icons.feedback),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Log Out"),
-                leading: Icon(Icons.logout),
-                onTap: () {},
-              ),
-            ],
-          ),
-        ), //
+        drawer: Drawer(),
         body: Center(
             child: Text(
           "hello from $selectedIndex_",
